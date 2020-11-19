@@ -2,23 +2,35 @@
 <html>
 <head>
 <title>Midterm Exam</title>
-<link rel="stylesheet" type="text/css" href="midterm.css">
-<script type="text/javascript" src="midterm.js"></script>
-</head>
+
+<input type="text" id="A" placeholder="Enter Your Multiplicand">
+
+<input type="text" id="B" placeholder="Enter Your Limits">
+
+<input type="text" id="C" placeholder="Enter Your Multiplier">
+
+<button onclick="Value()">Click Me</button>
+<script>
+
+function Value(){
+    var n1 = document.getElementById("A").value;
+    var n2 = document.getElementById("B").value;
+    var n3 = document.getElementById("C").value;
+        for (var i = n1; i<=n2; i++){
+         var mul = i * n3; 
+            document.write(i +" " + "x" + " "+ n3 +" "+ " = " +" " +mul + "<br>"); 
+    }
+}
+</script>
+<style>
+button{
+	background-color: #87CEEB;
+	 color: red;
+	 border-radius: 6px;
+}
+</style>
 <body>
-	<div>
-		<input type="number" name="" id="input" min="1" max="1000" step="5">
-		<input type="number" name="" id="inputb" min="1" max="1000" step="5">
-		<input type="number" name="" id="inputc" min="1" max="1000" step="5">
-		<input type="button" name="" value="Click me" onclick="getinfo()">
-
-
-
-
-	</div>
-	<div id="output">
-		
-	</div>
+	
 
 </body>
 
